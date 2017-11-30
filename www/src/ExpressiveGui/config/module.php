@@ -9,6 +9,12 @@ return [
     'routes'       => [
         [
             'name'            => 'expressive-gui',
+            'path'            => '/',
+            'middleware'      => \ExpressiveGui\Action\SiteAction::class,
+            'allowed_methods' => [ 'GET' ],
+        ],
+        [
+            'name'            => 'expressive-gui',
             'path'            => '/expressive-gui',
             'middleware'      => \ExpressiveGui\Action\SiteAction::class,
             'allowed_methods' => [ 'GET' ],
