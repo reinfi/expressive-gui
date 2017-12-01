@@ -13,12 +13,6 @@ return [
             'middleware'      => \ExpressiveGui\Action\SiteAction::class,
             'allowed_methods' => [ 'GET' ],
         ],
-        [
-            'name'            => 'expressive-gui',
-            'path'            => '/expressive-gui',
-            'middleware'      => \ExpressiveGui\Action\SiteAction::class,
-            'allowed_methods' => [ 'GET' ],
-        ],
     ],
     'templates'    => [
         'paths' => [
